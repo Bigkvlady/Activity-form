@@ -20,7 +20,7 @@ export default class ActivitySelect extends React.Component {
     store.activityDataAdd.offer.file_id = Date.now();
   }
 
-  //  Validating entered value and changing it in database
+  //  Partial validating entered value and changing it in database
   handleSumChange(e) {
 
     //  Changing ',' to '.' to have valid number
@@ -58,6 +58,7 @@ export default class ActivitySelect extends React.Component {
     }
   }
 
+  //  Final validation on blur and writing to database
   validateSumValue(e) {
 
     //  Checking if there is a '.' is the entered value
@@ -79,16 +80,22 @@ export default class ActivitySelect extends React.Component {
     }
   }
 
+  //  Changing contract number in database
   handleContractNumberChange(e) {
     store.activityDataAdd.contract.number = e.target.value;
   }
 
+  //  Changing contract date in database
   handleContractDateChange(e) {
     let tempDate = e.target.value.split('.');
     store.activityDataAdd.contract.date = tempDate[2] + '-' + tempDate[1] + '-' + tempDate[0];
   }
+
+  //  Showing form according to selected activity
+  //  and adding it to the database
   activitySelectChange(e) {
 
+    //  Commercial offer
     if (e.target.value == 3) {
       store.activityDataAdd.offer = {
         sum: 50.44,
@@ -107,6 +114,7 @@ export default class ActivitySelect extends React.Component {
 
     } else store.activityDataAdd.offer = null;
 
+    //  Contract
     if (e.target.value == 4) {
       store.activityDataAdd.contract = {
         number: '4214',

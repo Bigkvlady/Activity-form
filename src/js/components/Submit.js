@@ -5,6 +5,8 @@ import store from '../data/store';
 @observer
 export default class Preview extends React.Component {
 
+  //  Submitting the form and displaying the final result in JSON format
+  //  In our case, displaying to the console
   static submit(e) {
     e.preventDefault();
     console.log( JSON.stringify(store.activityDataAdd, null, 4) );

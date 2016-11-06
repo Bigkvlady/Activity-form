@@ -7,6 +7,7 @@ import store from '../data/store';
 @observer
 export default class PhoneSelect extends React.Component {
 
+  //  Changing phone id in the database
   phoneSelectChange(e) {
     store.activityDataAdd.phone_id = e.target.value;
   }

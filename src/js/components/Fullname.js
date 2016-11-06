@@ -5,6 +5,7 @@ import store from '../data/store';
 @observer
 export default class Fullname extends React.Component {
 
+  //  Changing fullname in the database
   static handleFullNameChange(e) {
       store.activityDataAdd.name = e.target.value;
   }

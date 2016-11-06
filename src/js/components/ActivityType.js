@@ -14,6 +14,7 @@ export default class Preview extends React.Component {
                 <span className="text">Activity type:</span>
             </div>
             <div className="flex-item-main-right">
+
                 <ActivitySelect />
             </div>
         </div>

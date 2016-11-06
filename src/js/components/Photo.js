@@ -6,17 +6,20 @@ import store from '../data/store';
 @observer
 export default class Preview extends React.Component {
 
+  //  Make photoPreview observable for state changes
   @observable photoPreview;
 
+  //  Getting file from the input and previewing it in base64
   previewFile(e){
       let file = e.target.files[0];
 
-        // Make new FileReader
+        //  Make new FileReader
       let reader = new FileReader();
 
-        // Convert the file to base64 text
+        //  Convert the file to base64 text
       reader.readAsDataURL(file);
 
+        //  Triggered each time the reading operation is successfully completed
       reader.onload = () => {
           this.photoPreview = <div className="photo-preview">
               <img src={reader.result} />
