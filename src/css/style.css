@@ -1,0 +1,110 @@
+html,
+body {
+	margin: 30px 10px 0 10px;
+	padding: 0;
+}
+body {
+	font: 14px Philosopher, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
+	background: #f5f5f5;
+	color: #4d4d4d;
+	min-width: 410px;
+	max-width: 550px;
+	margin: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 300;
+}
+button {
+	background: none;
+	border: 1px solid rgb(169, 169, 169);
+	border-radius: 3px;
+	font: 14px Philosopher, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #444;
+	line-height: 24px;
+	padding: 0 8px;
+	align-items: center;
+	cursor: pointer;
+}
+:focus {
+	outline: 0;
+}
+.submit {
+	padding: 5px 0;
+}
+
+span.text {
+	display: block;
+	border-bottom: 1px solid #d9d9d9;
+	padding: 5px 5px 5px 10px;
+	width: 80%;
+}
+.edit-input {
+	width: 95%;
+	border: 0;
+	margin-top: 2px;
+	padding: 5px 5px 5px 0;
+	font: 14px Philosopher, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+span > .edit-input {
+	width: 60%;
+}
+
+.hidden {
+	display: none;
+}
+.main-container {
+	background: #fff;
+	margin: 0 0 40px 0;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+	            0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+.phone-select select {
+	width: 200px;
+}
+.photo-preview img {
+	max-width: 100%;
+	height: auto;
+}
+.photo-preview {
+	max-width: 100%;
+	padding: 10px 5px 5px 0;
+}
+.photo-file-button input {
+	margin-top: 3px;
+}
+.photo-file-input {
+	font-family: Philosopher, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.activity-selector {
+
+}
+.activity-form {
+	padding: 10px;
+}
+.activity-form span {
+	display: block;
+	padding-bottom: 5px;
+}
+.error-message {
+	color: red;
+}
+
+.json-preview {
+	padding: 10px;
+}
+.json-preview h3 {
+	text-align: center;
+	margin: 0;
+}
+
+.info {
+	margin: 65px auto 0;
+	color: #bfbfbf;
+	font-size: 10px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	text-align: center;
+}
+.info p {
+	line-height: 1;
+}
